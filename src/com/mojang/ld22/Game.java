@@ -27,6 +27,7 @@ import com.mojang.ld22.screen.TitleMenu;
 import com.mojang.ld22.screen.WonMenu;
 
 public class Game extends Canvas implements Runnable {
+	//Setup
 	private static final long serialVersionUID = 1L;
 	private Random random = new Random();
 	public static final String NAME = "Minicraft";
@@ -330,6 +331,7 @@ public class Game extends Canvas implements Runnable {
 	}
 
 	public static void main(String[] args) {
+		//Initialize game, setup frame
 		Game game = new Game();
 		game.setMinimumSize(new Dimension(WIDTH * SCALE, HEIGHT * SCALE));
 		game.setMaximumSize(new Dimension(WIDTH * SCALE, HEIGHT * SCALE));
